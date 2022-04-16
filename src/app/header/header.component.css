@@ -1,0 +1,9 @@
+.ghf-link {
+      color: white;
+}
+
+.ghf-active {
+      color: #4fdc77;
+      padding-bottom: 10px;
+      border-bottom: 2px solid white;
+}
