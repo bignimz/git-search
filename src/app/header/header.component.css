@@ -1,9 +1,17 @@
 .ghf-link {
       color: white;
+      margin-right: 30px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      transition: all ease-in-out .3s;
+}
+
+.ghf-link:hover {
+      color: #4fdc77;
+      border-bottom: 2px solid white;
 }
 
 .ghf-active {
       color: #4fdc77;
-      padding-bottom: 10px;
       border-bottom: 2px solid white;
 }
