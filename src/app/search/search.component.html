@@ -5,29 +5,27 @@
       <h2 class="text-center text-white my-5">
         Type Github Username to Search
       </h2>
-      <form class="search mb-5" (submit)="searchUser()">
+      <form class="search mb-5">
         <div class="form-group">
           <i class="fa fa-search"></i>
           <input
-            [(ngModel)]="username"
             name="username"
             type="text"
             class="form-control"
             placeholder="Type username to search.."
             required
+            (keyup)="findUser()"
           />
-          <div class="bg-danger text-white p-3" *ngIf="username === ''">
+          <!-- <div class="bg-danger text-white p-3" *ngIf="username === ''">
             Enter username first before searching.
-          </div>
+          </div> -->
         </div>
-        {{ username }}
+        <!-- {{ username }} -->
         <button type="submit" class="btn btn-dark fs-5">Search</button>
       </form>
     </div>
   </div>
-  <div>
-    {{ githubProfile }}
-  </div>
+  <div></div>
 
   <!-- Profile Section -->
   <div class="profile px-3 border shadow-lg my-4 bg-white">
