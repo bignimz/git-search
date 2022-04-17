@@ -1,3 +1,5 @@
 .main {
       background-image: linear-gradient(to left top,#4FDC77,#222222);
+      margin: 0;
+      padding: 0;
 }

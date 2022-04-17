@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-
+  ghKey: "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"
 };
 
 /*
