@@ -4,6 +4,10 @@ This is a web application that enables a user to search for and view details of 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
+## Project Preview
+
+![Giffy App](/src/assets/proj-preview.png)
+
 ## Technologies Implemented in this Project
 
 1. Angular 13 CLI
