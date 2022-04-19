@@ -1,6 +1,6 @@
 <div class="container">
   <!-- Search Input Section -->
-  <div class="row height d-flex justify-content-center align-items-center">
+  <div class="row d-flex justify-content-center align-items-center">
     <div class="col-md-8">
       <h2 class="text-center text-white my-5">
         Type Github Username to Search
@@ -130,16 +130,21 @@
   </div>
 </div>
 <div class="container">
-  <div *ngFor="let item of repo" class="repo-lists">
+  <h2 class="text-center text-white my-4">{{ user.name }}'s Repository</h2>
+  <div *ngFor="let item of repo" let i="index" class="repo-lists">
     <div class="repo-item border p-5 bg-white shadow-lg my-3 text-center">
       <h2>{{ item.name }}</h2>
+      <span class="like"
+        ><button class="btn btn-dark float-right">Like</button></span
+      >
       <p>{{ item.description }}</p>
       <hr />
       <p class="lead">
         Created on: <span class="item">{{ item.created_at | date }}</span>
       </p>
       <p class="lead">
-        Languages Used: <span class="item">{{ item.language }}</span>
+        Languages Used:
+        <span class="item">{{ item.language | languageDecorator: "**" }}</span>
       </p>
       <a href="{{ item.homepage }}" target="_blank">
         <button class="btn btn-warning">View Project</button>

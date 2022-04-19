@@ -1,7 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+
 body {
       font-family: "Poppins", sans-serif;
       background-image: linear-gradient(to left top,#4FDC77,#222222);
+      animation: fadeInAnimation ease 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
 }
