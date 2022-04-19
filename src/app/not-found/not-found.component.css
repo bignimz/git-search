@@ -1,0 +1,14 @@
+.error {
+      height: 80vh;
+}
+
+.error-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.oops {
+      font-size: 89px;
+}
