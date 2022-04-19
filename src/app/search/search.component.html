@@ -131,8 +131,19 @@
 </div>
 <div class="container">
   <div *ngFor="let item of repo" class="repo-lists">
-    <div class="repo-item border p-5 bg-white shadow-lg my-3">
+    <div class="repo-item border p-5 bg-white shadow-lg my-3 text-center">
       <h2>{{ item.name }}</h2>
+      <p>{{ item.description }}</p>
+      <hr />
+      <p class="lead">
+        Created on: <span class="item">{{ item.created_at | date }}</span>
+      </p>
+      <p class="lead">
+        Languages Used: <span class="item">{{ item.language }}</span>
+      </p>
+      <a href="{{ item.homepage }}" target="_blank">
+        <button class="btn btn-warning">View Project</button>
+      </a>
     </div>
   </div>
 </div>

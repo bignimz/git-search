@@ -96,3 +96,7 @@ body {
 .repo-item {
     border-radius: 10px;
 }
+
+.item {
+    font-weight: 700;
+}
