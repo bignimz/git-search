@@ -87,3 +87,12 @@ body {
     font-weight: 600;
     font-size: 20px;
 }
+
+.color-badge {
+    background-color: #ffb82b;
+    color: #333;
+}
+
+.repo-item {
+    border-radius: 10px;
+}
